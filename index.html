@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <title>Inspired!</title>
+    <!-- Required meta tags which must be listed first in the head.-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Think I need this. My jumbotron isn't working properly. Surely won't hurt to try it!  -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- gonna remove this because of the shrink to fit being set to no. Not sure if this is the cause
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <!-- adding this line in place of the one above...-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -19,8 +27,9 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        min-height: 100vh;        
+        height: 100vh;        
       }
+
 
       .display-1 {
         font-family: 'Modern Antiqua', cursive;
@@ -49,11 +58,17 @@
       
       section {
         padding-top: 4rem;
+        
       }
 
       #section-newsletter {
         padding-top: 0;
       }
+
+      #section-books {
+        position: relative;
+      }
+
 
       body {
         font-family: 'Open Sans', sans-serif;
@@ -71,7 +86,20 @@
         color: white;
       }
 
+      .responsive {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+
+      .d-block img-fluid {
+        width:100%; 
+        max-width:600px; 
+        height:auto;
+      }
+
     </style>
+
   </head>
   
   <body data-spy="scroll" data-target="#navScrollspy">
@@ -138,7 +166,7 @@
           
       </section>
 
-      <p style="text-align:center;"><img src="live.jpg" alt="LLL"></p>
+      <p style="text-align:center;"><img src="live.jpg" alt="LLL" class="responsive"></p>
       <section id="section-laugh">
         <h2 class="display-5 text-center">Laugh often...</h2>
         <p class="text-left"> The proverb, <strong><em>‘laughter is the best medicine’</em></strong>, means that ‘laughter is the best way to recover’. The implication of this proverb is that ‘laughter is better at curing us than medication.’.</p>
@@ -153,7 +181,7 @@
 
         <p>Unlike when we were children, as we age we’re more serious and lose the beneficial habit of laughing frequently. Laughter gives an immediate release of tension and uplifts the spirits.</p>
         <p>GEAR UP: Surround yourself with friends and family and choose to laugh often in your daily life. </p> <br>
-        <p style="text-align:center;"><img src="laughverse.jpg" alt="books" style="width:60%; height:600px;"></p>
+        <p style="text-align:center;"><img src="laughverse.jpg" alt="books" class="responsive"></p>
       </section>
 
       <section id="section-learn">
@@ -171,7 +199,7 @@
           <li>Learn for where you want to be</li>
           <li>Most importantly - Learn for YOURSELF!</li>
         </p><br>
-        <p style="text-align:center;"><img src="stackofbooks.jpg" alt="books"></p>
+        <p style="text-align:center;"><img src="stackofbooks.jpg" alt="books" class="responsive"></p>
       </section>  
 
       <section id="section-regret">
@@ -179,7 +207,7 @@
         <p class="text-center">Life is priceless and it is precious so grab it and live your life to it's fullest!</p><br>
       </section>
 
-      <p style="text-align:center;"><img src="beach.jpg" alt="beachy" style="width:75%; height:400px;"></p>
+      <p style="text-align:center;"><img src="beach.jpg" alt="beachy" class="sand" style="width:100%; max-width: 800px; height:auto;"></p>
 
       <section id="section-reading">
         <h2 class="display-5 text-center">Summer Reading</h2>
@@ -193,22 +221,22 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <center><img src="flygirl.jpg" alt="Slide #1" class="d-block img-fluid" style="width:40%; height:600px;"></center>
+              <center><img src="flygirl.jpg" alt="Slide #1" class="d-block img-fluid"></center>
               <div class="carousel-caption">
               </div>
             </div>
             <div class="carousel-item">
-              <center><img src="boundaries.jpg" alt="Slide #2" class="d-block img-fluid" style="width:40%; height:600px;"></center>
+              <center><img src="boundaries.jpg" alt="Slide #2" class="d-block img-fluid"></center>
               <div class="carousel-caption">
               </div>
             </div>
             <div class="carousel-item">
-              <center><img src="golden.jpg" alt="Slide #3" class="d-block img-fluid" style="width:40%; height:600px;"></center>
+              <center><img src="golden.jpg" alt="Slide #3" class="d-block img-fluid"></center>
               <div class="carousel-caption">
               </div>
             </div>
             <div class="carousel-item">
-              <center><img src="happy.jpg" alt="Slide #4" class="d-block img-fluid" style="width:40%; height:600px;"></center>
+              <center><img src="happy.jpg" alt="Slide #4" class="d-block img-fluid"></center>
               <div class="carousel-caption">
               </div>
             </div>
